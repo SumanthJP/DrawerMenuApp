@@ -25,6 +25,8 @@ target 'DrawerMenuApp' do
 
   target 'DrawerMenuAppTests' do
     inherit! :complete
+    pod 'RNReanimated', :path => '../node_modules/react-native-reanimated'
+    pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
     # Pods for testing
   end
 
