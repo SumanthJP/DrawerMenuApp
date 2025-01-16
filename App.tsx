@@ -18,10 +18,17 @@ const App = () => {
           drawerContent={props => <CustomDrawerContent {...props} />}
           screenOptions={{
             headerShown: false,
-            drawerType: 'slide',
+            drawerType: 'back',
             drawerStyle: {
-              width: '100%',
+              width: '60%',
             },
+            drawerContentContainerStyle: {
+              backgroundColor: '#121212', // Match drawer background color
+            },
+            sceneStyle: {
+              backgroundColor: '#121212',
+            },
+            overlayColor: '',
           }}>
           <Drawer.Screen name="Start" component={HomeScreen} />
           <Drawer.Screen name="Your Cart" component={CartScreen} />

@@ -12,7 +12,7 @@ import {SafeAreaView} from 'react-native-safe-area-context';
 import Animated from 'react-native-reanimated';
 
 const {width} = Dimensions.get('window');
-const DRAWER_WIDTH = width * 0.85;
+const DRAWER_WIDTH = width * 0.7;
 
 interface CustomDrawerContentProps {
   navigation: any;
@@ -78,7 +78,7 @@ const styles = StyleSheet.create({
     flex: 1,
     width: DRAWER_WIDTH + 50, // Added extra width to account for the tilt
     backgroundColor: '#121212',
-    transform: [{skewX: '10deg'}], // Changed angle and direction
+    transform: [{skewX: '7deg'}], // Changed angle and direction
     marginLeft: -50, // Adjusted to account for the tilt
     paddingLeft: 30,
     overflow: 'hidden',
@@ -96,7 +96,7 @@ const styles = StyleSheet.create({
   },
   drawer: {
     flex: 1,
-    transform: [{skewX: '-10deg'}], // Counter-transform for content
+    transform: [{skewX: '-7deg'}], // Counter-transform for content
     marginLeft: 20, // Added to adjust content position
   },
   container: {
